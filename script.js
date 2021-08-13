@@ -21,6 +21,15 @@ $(function() {
     }
   );
   
-  
-
+  // FAQ
+  $('.faq-list-item').click(function() {
+    var $answer = $(this).find('.answer');
+    if($answer.hasClass('open')) {
+      $answer.removeClass('open').slideUp(); //隱藏
+      $(this).find('span').text('+');  //隱時符號變-
+    } else {
+      $answer.addClass('open').slideDown();  //顯示
+      $(this).find('span').text('-');  //顯示時符號變-
+    }
+  });
 });
