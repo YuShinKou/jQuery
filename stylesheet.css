@@ -245,6 +245,7 @@ header {
   font-size: 12px;
   padding: 5px 0px;
   margin-bottom: 15px;
+  display: none;
 }
 
 .message-wrapper {
